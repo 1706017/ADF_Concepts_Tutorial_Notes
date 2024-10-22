@@ -1,0 +1,30 @@
+Day1) 22nd October 2024
+=============================================
+Topic1) Introduction To Azure DataFactory:
+=============================================
+	• Azure Data Factory is an azure cloud service
+
+	• It is basically a cloud based ETL tool that helps to bring/ingest data from multiple sources and we can also do some 
+	Basic level transformation using data flow debug and once data is transformed we can load to destination location 
+
+	• Apart from that we can also create data pipelines in this and can also orchestrate those pipelines to run on their schedule
+
+Topic 2) Main Components in Azure Data Factory 
+========================================= 
+
+	A) Pipelines in ADF : It is simply a logical grouping of activities that performs a unit of work 
+	
+	• For example: we can have a pipeline where using the copy activity it is copying the data from source to destination and then after that we have used data flow debug activity to do basic transformation of data then finally we will load the data to data lake container so this can be a pipeline 
+	
+	• We can have multiple pipelines in Azure Data Factory for doing different different work as per requirements
+
+	B) Activities: These are the individual task that are collectively grouped and termed as pipeline each activity that we use in our data pipeline performs some tasks like copy activity, delete activity, databricks notebook activity etc.
+
+	C) Linked Service and Datasets : Linked service is like a connection string that basically helps to create connection of adf with external services 
+
+	• Datasets simply points/ refernce to the location of data that means the path to the data in both source and   
+	Destination
+	
+	• Linked service is required because in our data pipeline the adf should have connection with all the external services while accessing the data from source and doing transformation and finally loading the data to destination 
+
+	D) Triggers : It simply scheduled our pipeline and with that schedule these triggers basically kicked off our data pipeline every day or as per the scheduled pipeline and there are different type of triggers for that we will learn in details for each triggers 
