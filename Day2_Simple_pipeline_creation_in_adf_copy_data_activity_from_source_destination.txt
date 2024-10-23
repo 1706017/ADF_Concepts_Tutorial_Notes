@@ -1,0 +1,23 @@
+Day-02 
+Date: 23rd October 2024
+
+Topic 3) Creation of Your First Azure Data Factory 
+
+Prerequisite: Azure Subscription and Azure Storage account
+
+	• Requirement : to copy the file from one folder to another folder in the same storage account using Copy data activity in Azure Data Factory 
+
+Step1) To create a storage account and create a container named adfdemo and inside that container create a input folder having file name data.txt
+
+Now we will create an input container holding our data
+
+Step2) create ADF and inside that create linked service for storage account 
+And create two data set one for source loaction of data and one for destination location where we want to copy our data 
+
+
+Step 3) Now we will create a pipeline where we will configure the copy data activity with the source and destination dataset that we have created
+
+
+Step 4) Now we can test our pipeline by clicking on the debug button and once that is succesful run of the pipeline then publish all the changes like linked service,datasets and the pipeline itself 
+
+
